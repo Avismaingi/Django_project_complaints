@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block style %}
+.container{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+    width: 700px;
+    height: 750px;
+  }
+{% endblock style %}
+
+{% block body %}
+<div class="container">
+    <form>
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input type="username" class="form-control" id="username" aria-describedby="username">
+            <div id="Auth" class="form-text">Only for admin and co.</div>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
